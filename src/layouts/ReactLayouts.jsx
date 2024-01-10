@@ -1,5 +1,4 @@
-import React from 'react';
-import Home from '../components/Home';
+// import Home from '../pages/Home';
 import { Outlet } from 'react-router-dom';
 
 const ReactLayouts = () => {
