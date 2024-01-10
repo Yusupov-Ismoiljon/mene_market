@@ -32,7 +32,7 @@ const Hero = () => {
                         <div className='w-[386px] flex flex-col items-center'>
                             <h2 className='font-bold text-3xl leading-normal mb-2'>Bayram oldi aksiyamizda <br />ishtirok eting</h2>
                             <span className='font-medium text-lg block mb-6'>90% gacha chegirma </span>
-                            <button className='flex items-center gap-2 font-medium text-lg bg-black rounded-[62px] p-6'><span>Harid qilish</span><img className='max-w-[24px] h-6' src={arrow} alt="" /></button>
+                            <button className='flex items-center gap-2 bg-black rounded-[62px] px-6 py-4'>Harid qilish<img className='max-w-[24px] h-6' src={arrow} alt="" /></button>
                         </div>
                         <div>
                             <img className='max-w-[459px] h-[172px]' src={aksayaimg} alt="" />
@@ -43,8 +43,8 @@ const Hero = () => {
                     <div className="w-full flex justify-between items-center text-white bg-[#0CD691] p-6">
                         <div className='w-[412px] flex flex-col items-center'>
                             <h2 className='font-bold text-3xl leading-normal mb-2'>Barcha rangdagi iPhonelar aksyada</h2>
-                            <span className='font-medium text-lg block mb-6'>90% gacha chegirma </span>
-                            <button className='flex items-center gap-2 font-medium text-lg bg-black rounded-[62px] p-6'><span>25% gacha chegirma </span><img className='max-w-[24px] h-6' src={arrow} alt="" /></button>
+                            <span className='font-medium text-lg block mb-6'>25% gacha chegirma </span>
+                            <button className='flex items-center gap-2 bg-black rounded-[62px] px-6 py-4'>Harid qilish<img className='max-w-[24px] h-6' src={arrow} alt="" /></button>
                         </div>
                         <div>
                             <img className='max-w-[459px] h-[172px]' src={aksiyaiPhone} alt="" />
