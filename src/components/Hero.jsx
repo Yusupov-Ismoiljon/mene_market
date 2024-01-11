@@ -1,4 +1,3 @@
-import React from 'react';
 import arrow from '../../public/img/arrow-right.svg';
 import aksayaimg from '../../public/img/aksiya-img.png'
 import aksiyaiPhone from '../../public/img/aksiya-iphone-img.png'
@@ -11,7 +10,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Hero = () => {
     return (
-        <div className='w-full max-w-[1240px] px-5 mx-auto pt-11 pb-11'>
+        <div className='w-full max-w-[1240px] px-5 mx-auto'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -25,7 +24,7 @@ const Hero = () => {
                 loop={true}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
+                className="mySwiper shadow-2xl shadow-gray-400"
             >
                 <SwiperSlide className='w-full'>
                     <div className="w-full flex justify-between items-center text-white bg-[#0CD691] p-6">

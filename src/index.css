@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .container{
+        @apply max-w-[1249px] w-full px-5 mx-auto
+    }
+}
+
 .swiper {
     width: 100%;
     height: 100%;

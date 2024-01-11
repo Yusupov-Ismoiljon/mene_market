@@ -1,6 +1,6 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import ReactLayouts from "./layouts/ReactLayouts";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 
 
 export default function App() {
