@@ -7,6 +7,9 @@ export default withMT({
       fontFamily: {
         'inter': ['Inter', 'sans-serif']
       },
+      backgroundImage: {
+        'star-bg': "url('/public/img/star-space.gif')",
+      }
     },
   },
   plugins: [],

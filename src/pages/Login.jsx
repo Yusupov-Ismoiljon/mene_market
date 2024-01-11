@@ -9,12 +9,12 @@ import { Link } from 'react-router-dom';
 
 const Login = ({ signup, setSignup }) => {
     return (
-        <>
-            <div>
+        < >
+            <div className="bg-star-bg ">
                 <div className='flex justify-center items-center '>
                     <div className='w-[450px] border-[#0B0B0B] rounded-lg show py-6 px-7'>
                         <Card className='flex text-center' color="transparent" shadow={false}>
-                            <h2 className='font-bold text-2xl leading-8 text-[#242424]'>
+                            <h2 className='font-bold text-2xl leading-8 text-[#aaa]'>
                                 Ruxsat
                             </h2>
                             <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
