@@ -39,7 +39,7 @@ const Header = () => {
                 {/* Search input */}
                 <div className='relative max-w-[360px]'>
                     <input className="rounded-3xl w-full border-black px-6 py-2 border" type="search" placeholder="Search..." />
-                    <img className='absolute right-3 top-2' src={Search} alt="Search icon" />
+                    <img className='absolute right-3 top-2 pl-1 bg-white'  src={Search} alt="Search icon" />
                 </div>
 
                 <div className="space-x-6 flex items-center justify-between">
