@@ -1,4 +1,3 @@
-import React from 'react';
 import Elektronika from '../../public/img/Elektronika.png';
 import Salomatlik from '../../public/img/Salomatlik.png';
 import Parfyumeriya from '../../public/img/Parfyumeriya.png';
@@ -168,7 +167,7 @@ const Kategoriyalar = () => {
             <div className='w-[120px] h-[120px] bg-[#C5BEEE] rounded-full p-4 mb-2'>
               <img className='bg-[#A095E4] rounded-full p-2' src={Sovgalar} alt="" />
             </div>
-            <span className='font-medium text-base leading-normal'>Sovg'alar</span>
+            <span className='font-medium text-base leading-normal'>Sovg`alar</span>
           </div>
         </SwiperSlide>
       </Swiper>
