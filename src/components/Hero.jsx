@@ -11,7 +11,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Hero = () => {
     return (
-        <div className='w-full max-w-[1240px] px-5 mx-auto'>
+        <div className='w-full max-w-[1240px] px-5 mx-auto pt-11 pb-11'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
