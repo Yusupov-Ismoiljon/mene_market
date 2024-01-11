@@ -71,7 +71,7 @@ const Header = () => {
                     </Select>
 
                     {/* LogIn & SignUp */}
-                    <Link to='/' className="flex items-center">
+                    <Link to='login' className="flex items-center">
                         <img src={profile} className="mr-1" alt="Global icon" />
                         <p className="font-medium">Kirish</p>
                     </Link>
