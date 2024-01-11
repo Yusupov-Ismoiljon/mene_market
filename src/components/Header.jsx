@@ -6,7 +6,7 @@ import Ru from "../../public/img/russia.png"
 import Eng from "../../public/img/united-states.png"
 import React from "react";
 import { Select, Option } from "@material-tailwind/react";
-import Global from "../../public/img/global.svg"
+import profile from "../../public/img/profile-circle.svg"
 
 
 
@@ -72,7 +72,7 @@ const Header = () => {
 
                     {/* LogIn & SignUp */}
                     <Link to='/' className="flex items-center">
-                        <img src={Global} className="mr-1" alt="Global icon" />
+                        <img src={profile} className="mr-1" alt="Global icon" />
                         <p className="font-medium">Kirish</p>
                     </Link>
                 </div>
