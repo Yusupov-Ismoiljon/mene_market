@@ -21,11 +21,18 @@ const Hero = () => {
                 pagination={{
                     clickable: true,
                 }}
+                style={{
+                    "--swiper-pagination-color": "#0CD691",
+                    "--swiper-pagination-bullet-inactive-color": "#222",
+                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                    "--swiper-pagination-bullet-size": "11px",
+                    "--swiper-pagination-bullet-horizontal-gap": "6px"
+                }}
+                
                 loop={true}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper shadow-2xl shadow-gray-400 pt-12"
-            >
+                className="mySwiper shadow-2xl shadow-gray-400 pt-12">
                 <SwiperSlide className='w-full'>
                     <div className="w-full flex justify-between items-center text-white bg-[#0CD691] p-6">
                         <div className='w-[386px] flex flex-col items-center'>

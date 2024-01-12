@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const Signup = ({ signup, setSignup }) => {
     return (
         <>
-            <div className="bg-star-bg">
+            <div className="bg-star-bg  w-[100%] bg-fixed bg-center">
                 <div className='flex justify-center items-center '>
                     <div className='w-[450px] border-[#0B0B0B] rounded-lg show py-6 px-7'>
                         <Card className='flex text-center' color="transparent" shadow={false}>

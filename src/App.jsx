@@ -3,24 +3,27 @@ import ReactLayouts from "./layouts/ReactLayouts";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/SignUp";
+// import PageNotFound from "./pages/PageNotFound";
 
 
 export default function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route element={<ReactLayouts />}>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={<ReactLayouts />}>
+        <Route index element={<Home />} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+
+        {/* <Route path="*" element={<PageNotFound />} /> */}
 
       </Route>
     )
   );
 
   return (
-    <div>
+    <div className="font-inter">
       <RouterProvider router={router} />
     </div>
   );

@@ -4,7 +4,7 @@
 
 @layer components{
     .container{
-        @apply max-w-[1249px] w-full px-5 mx-auto
+        @apply max-w-[1240px] w-full px-5 mx-auto
     }
 }
 
@@ -29,4 +29,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.swiper-pagination-bullet {
+    border: 1px solid #111;
 }
