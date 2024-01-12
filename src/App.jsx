@@ -2,8 +2,8 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import ReactLayouts from "./layouts/ReactLayouts";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Signup from "./pages/SignUp";
-// import PageNotFound from "./pages/PageNotFound";
+import Signup from "./pages/Signup";
+import NotFound from "./pages/NotFound";
 
 
 export default function App() {
@@ -14,9 +14,9 @@ export default function App() {
         <Route index element={<Home />} />
 
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/signup" element={<Signup/>} />
 
-        {/* <Route path="*" element={<PageNotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
 
       </Route>
     )
