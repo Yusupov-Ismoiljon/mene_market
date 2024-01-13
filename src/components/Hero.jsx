@@ -10,7 +10,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Hero = () => {
     return (
-        <div className='w-full max-w-[1240px] px-5 mx-auto'>
+        <div className='w-full max-w-[1240px] px-5 pt-12 mx-auto'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -32,7 +32,7 @@ const Hero = () => {
                 loop={true}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper shadow-2xl shadow-gray-400 pt-12">
+                className="mySwiper shadow-2xl shadow-gray-400">
                 <SwiperSlide className='w-full'>
                     <div className="w-full flex justify-between items-center text-white bg-[#0CD691] p-6">
                         <div className='w-[386px] flex flex-col items-center'>

@@ -9,8 +9,7 @@ export default withMT({
       },
       backgroundImage: {
         'star-bg': "url('/public/img/star-space.gif')",
-        'tort-bg': "url('/public/img/HTML-404-Error-Page.gif')",
-
+        'not-page': "url('/public/img/Error-Page.gif')",
       }
     },
   },
