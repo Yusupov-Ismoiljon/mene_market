@@ -3,7 +3,7 @@ import ReactLayouts from "./layouts/ReactLayouts";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import NotFound from "./pages/NotFound";
+import PageNotFound from "./pages/PageNotFound";
 
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup/>} />
 
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<PageNotFound />} />
 
       </Route>
     )
