@@ -31,11 +31,12 @@ const Header = () => {
         <header className="py-6 shadow-md">
             <div className="container  ">
                 <div className="flex justify-between items-center">
+
                     {/* Site Logo */}
                     <Link to='/' className="hover:opacity-75">
                         <img width={96} height={48} src={Logo} alt="Site Logo" />
                     </Link>
-                        {/* LogIn & SignUp */}
+                    {/* LogIn & SignUp */}
 
                     {/* Search input */}
                     <div className='relative max-w-[360px]'>
@@ -50,12 +51,13 @@ const Header = () => {
                         </a>
 
                         <div className=" flex items-center rounded-md duration-300 hover:shadow-md hover:shadow-blue-400 px-2 py-1">
-                                <Link to='login' className="items-center mr-7  flex">
+                            <Link to='login' className="items-center mr-7  flex">
                                 <img src={profile} className="mr-1" alt="Global icon" />
-                                    <p className="font-medium inline-block">Kirish</p>
-                                </Link>
+                                <p className="font-medium inline-block">Kirish</p>
+                            </Link>
                         </div>
 
+                        {/* Select */}
                         <Select
                             size="lg"
                             label="Select Language"
