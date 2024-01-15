@@ -25,6 +25,13 @@ const Kategoriyalar = () => {
         pagination={{
           clickable: true,
         }}
+        style={{
+          "--swiper-pagination-color": "#222",
+          "--swiper-pagination-bullet-inactive-color": "none",
+          "--swiper-pagination-bullet-inactive-opacity": "1",
+          "--swiper-pagination-bullet-size": "11px",
+          "--swiper-pagination-bullet-horizontal-gap": "6px"
+        }}
         breakpoints={{
           800: {
             slidesPerView: 3,
@@ -40,9 +47,9 @@ const Kategoriyalar = () => {
           },
         }}
         modules={[Pagination]}
-        className="mySwiper py-6"
+        className="mySwiper py-5"
       >
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#8DB8E2] rounded-full p-4 mb-2'>
               <img className='bg-blue-300 rounded-full py-4' src={Elektronika} alt="" />
@@ -50,7 +57,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Elektronika</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#FAAEAD] rounded-full p-4 mb-2'>
               <img className='bg-red-400 rounded-full py-4' src={Salomatlik} alt="" />
@@ -58,7 +65,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Salomatlik</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#F4E094] rounded-full p-4 mb-2'>
               <img className='bg-yellow-400 rounded-full' src={Parfyumeriya} alt="" />
@@ -66,7 +73,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Parfyumeriya</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#C1F4AF] rounded-full p-4 mb-2'>
               <img className='bg-green-300 rounded-full p-2' src={MaishiyTexnika} alt="" />
@@ -74,7 +81,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Maishiy texnika</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#C5BEEE] rounded-full p-4 mb-2'>
               <img className='bg-purple-400 rounded-full p-2' src={Telefonlar} alt="" />
@@ -82,7 +89,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Telefonlar</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#8DB8E2] rounded-full p-4 mb-2'>
               <img className='bg-blue-300 rounded-full p-2' src={Kompyuterlar} alt="" />
@@ -90,7 +97,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Kompyuterlar</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#FAAEAD] rounded-full p-4 mb-2'>
               <img className='bg-red-400 rounded-full p-2' src={Mashinalar} alt="" />
@@ -98,7 +105,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Mashinalar</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#F4E094] rounded-full p-4 mb-2'>
               <img className='bg-yellow-400 rounded-full p-2' src={BolalarUchun} alt="" />
@@ -106,7 +113,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Bolalar uchun</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#F4E094] rounded-full p-4 mb-2'>
               <img className='bg-yellow-400 rounded-full p-2' src={Parfyumeriya} alt="" />
@@ -114,7 +121,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Parfyumeriya</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#C1F4AF] rounded-full p-4 mb-2'>
               <img className='bg-green-300 rounded-full p-2' src={MaishiyTexnika} alt="" />
@@ -122,7 +129,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Maishiy texnika</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#C5BEEE] rounded-full p-4 mb-2'>
               <img className='bg-[#A095E4] rounded-full p-2' src={Telefonlar} alt="" />
@@ -130,7 +137,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Telefonlar</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px]  bg-[#BED6EF] rounded-full p-4 mb-2'>
               <img className='bg-[#8DB8E2] rounded-full p-2' src={Kompyuterlar} alt="" />
@@ -138,7 +145,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Kompyuterlar</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#FAAEAD;] rounded-full p-4 mb-2'>
               <img className='bg-[#F56666] rounded-full p-2' src={Mashinalar} alt="" />
@@ -146,7 +153,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Mashinalar</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#F4E094] rounded-full p-4 mb-2'>
               <img className='bg-[#EFCC4E] rounded-full p-2' src={BolalarUchun} alt="" />
@@ -154,7 +161,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Bolalar uchun</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#C1F4AF] rounded-full p-4 mb-2'>
               <img className='bg-[#C1F4AF] rounded-full' src={Kitoblar} alt="" />
@@ -162,7 +169,7 @@ const Kategoriyalar = () => {
             <span className='font-medium text-base leading-normal'>Kitoblar</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='py-5'>
           <div>
             <div className='w-[120px] h-[120px] bg-[#C5BEEE] rounded-full p-4 mb-2'>
               <img className='bg-[#A095E4] rounded-full p-2' src={Sovgalar} alt="" />
