@@ -40,8 +40,6 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
     box-shadow: -5px -5px 10px orange;
     background-color: rgb(252, 249, 249);
-
-
 }
 
 body::-webkit-scrollbar-thumb {
