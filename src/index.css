@@ -33,3 +33,19 @@
 .swiper-pagination-bullet {
     border: 1px solid #111;
 }
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: -5px -5px 10px orange;
+    background-color: rgb(252, 249, 249);
+
+
+}
+
+body::-webkit-scrollbar-thumb {
+    box-shadow: 0px 0px 10px rgb(7, 207, 247);
+    background-color: rgba(50, 152, 247, 0.8);
+    border-radius: 200px;
+}
