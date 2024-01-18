@@ -10,7 +10,7 @@ import profile from "../../public/img/profile-circle.svg"
 
 
 
-const Header = () => {
+const Header = ({searchQuery, setSearchQuery}) => {
 
     const countries = [
         {
@@ -40,8 +40,12 @@ const Header = () => {
 
                     {/* Search input */}
                     <div className='relative max-w-[360px]'>
-                        <input className="rounded-3xl w-full border-black px-6 py-2 border" type="search" placeholder="Search..." />
+                        <input
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            className="rounded-3xl w-full border-black px-6 py-2 border" type="search" placeholder="Search..." />
                         <img className='absolute right-3 top-2 pl-1 bg-white' src={Search} alt="Search icon" />
+
                     </div>
 
                     <div className=" flex items-center space-x-3">

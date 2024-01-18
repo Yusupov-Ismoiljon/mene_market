@@ -6,11 +6,15 @@ import {
     Typography,
 } from "@material-tailwind/react";
 import { Link } from 'react-router-dom';
+import logo from '../../public/img/icon.png'
 
 const Login = () => {
     return (
         < >
-            <div className="bg-star-bg bg-fixed bg-center text-white">
+            <div className="flex flex-col items-center justify-center w-full h-screen bg-star-bg bg-fixed bg-cover bg-center text-white">
+            <Link className="w-[140px] h-60px]" to={'/'}>
+                    <img src={logo} alt="" />
+                </Link>
                 <div className='flex justify-center items-center '>
                     <div className='w-[450px] border-[#fff] rounded-lg show py-6 px-7'>
                         <Card className='flex text-center' color="transparent" shadow={false}>

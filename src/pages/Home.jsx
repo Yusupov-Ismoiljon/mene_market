@@ -5,19 +5,21 @@ import PopularProducts from '../components/PopularProducts';
 import { OmmabobMahsulot, YangiMahsulot } from '../store/data';
 import { Rating } from "@material-tailwind/react";
 
-const Home = () => {
+const Home = ({ searchQuery, setSearchQuery }) => {
     return (
         <>
             <Hero />
             <Kategoriyalar />
 
-            <section className='py-8'>
+
+
+            <section>
                 <div className='container'>
                     <h2 className='text-3xl mb-6 font-bold'>Yangi kelgan mahsulotlar</h2>
                     <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-6'>
                         {
                             YangiMahsulot.map((data) => (
-                                <NewProducts data={data} />
+                                <NewProducts data={data} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
                             ))
                         }
                     </ul>
@@ -50,9 +52,9 @@ const Home = () => {
             </section>
 
 
-            
-            
-        </>
+
+
+    </>    
     )
 }
 
