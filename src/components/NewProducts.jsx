@@ -12,7 +12,7 @@ const NewProducts = ({ data, searchQuery, }) => {
     const isMalumotYoq = !data.title.toLowerCase().includes(searchQuery.toLowerCase());
     return (
         <li key={data.id} className={`${isMalumotYoq ? 'hidden' : 'block'} border-1 shadow-lg rounded-3xl`}>
-            <img src={data.img} height={292} className='w-full rounded-3xl' alt={data.title} />
+            <img src={data.img} height={242} className='w-full rounded-3xl' alt={data.title} />
 
             <div className='p-6 space-y-2'>
                 <h3 className='text-xl font-semibold'>{data.title}</h3>

@@ -10,8 +10,10 @@ const NewProducts = ({ data }) => {
     const [like, setLike] = useState(false);
 
     return (
-        <li key={data.id} className='border-1 shadow-lg rounded-3xl'>
-            <img src={data.img} height={292} className='w-full rounded-3xl' alt={data.title} />
+        <li key={data.id} className='border-1 shadow-lg rounded-3xl '>
+            <div className='flex  flex-col justify-center items-center h-full max-h-[242px]'>
+                <img src={data.img} className='h-full rounded-3xl' alt={data.title} />
+            </div>
 
             <div className='p-6 space-y-2'>
                 <h3 className='text-xl font-semibold'>{data.title}</h3>
