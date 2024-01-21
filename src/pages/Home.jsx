@@ -1,3 +1,4 @@
+import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Kategoriyalar from '../components/Kategoriyalar';
 import NewProducts from '../components/NewProducts';
@@ -11,7 +12,6 @@ const Home = ({ searchQuery, setSearchQuery }) => {
         <>
             <Hero />
             <Kategoriyalar />
-
 
             <section className='py-8'>
                 <div className='container'>
@@ -53,7 +53,7 @@ const Home = ({ searchQuery, setSearchQuery }) => {
 
             <Qulayliklar />
 
-
+            <Footer />
         </>
     )
 }

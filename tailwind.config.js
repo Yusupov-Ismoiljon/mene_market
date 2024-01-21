@@ -1,4 +1,4 @@
-const withMT = require("@material-tailwind/react/utils/withMT");
+import withMT from "@material-tailwind/react/utils/withMT";
 
 export default withMT({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -10,7 +10,7 @@ export default withMT({
       backgroundImage: {
         'star-bg': "url('/public/img/star-space.gif')",
         'not-page': "url('/public/img/Error-Page.gif')",
-      }
+      },
     },
   },
   plugins: [],
