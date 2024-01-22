@@ -5,27 +5,48 @@ import Uz from "../../public/img/uzbekistan.png"
 import Ru from "../../public/img/russia.png"
 import Eng from "../../public/img/united-states.png"
 import React from "react";
-import { Select, Option } from "@material-tailwind/react";
 import profile from "../../public/img/profile-circle.svg"
+import { DownOutlined } from '@ant-design/icons';
+import { Dropdown, Space } from 'antd';
+import Global from "../../public/img/global.svg"
 
 
 
-const Header = ({searchQuery, setSearchQuery}) => {
+const Header = ({ searchQuery, setSearchQuery }) => {
 
-    const countries = [
+
+    const items = [
         {
-            name: 'Uzb',
-            Img: Uz
+            key: '1',
+            label: (
+                <a target="_blank" className="flex items-center rounded-md p-1 shadow-md" rel="noopener noreferrer" href="https://www.antgroup.com">
+                    <img src={Uz} className="mr-2" width={24} alt="Uzbekistan icon" />
+                    Uz
+                </a>
+            ),
         },
         {
-            name: 'Ru',
-            Img: Ru
+            key: '2',
+            label: (
+                <a target="_blank" className="flex items-center rounded-md p-1 shadow-md" rel="noopener noreferrer" href="https://www.antgroup.com">
+                    <img src={Ru} className="mr-2" width={24} alt="Russia icon" />
+                    Ru
+                </a>
+            ),
         },
         {
-            name: 'Eng',
-            Img: Eng
+            key: '3',
+            label: (
+                <a target="_blank" className="flex items-center rounded-md p-1 shadow-md" rel="noopener noreferrer" href="https://www.antgroup.com">
+                    <img src={Eng} className="mr-2" width={24} alt="English icon" />
+                    Eng
+                </a>
+            ),
         },
-    ]
+
+    ];
+
+
 
     return (
         <header className="py-6 shadow-md">
@@ -48,42 +69,37 @@ const Header = ({searchQuery, setSearchQuery}) => {
 
                     </div>
 
-                    <div className=" flex items-center space-x-3">
+                    <div className=" flex items-center  space-x-3">
 
                         <a href="https://t.me/+O9MlXXfxUA84N2Ji" target="_blank" className="hover:bg-blue-500 rounded-md px-2 py-1 duration-300 hover:text-white">
                             Aloqa
                         </a>
 
+                        {/* Select language */}
+                        <Dropdown
+                            menu={{
+                                items,
+                            }}
+                            className="flex items-center"
+                        >
+                            <a onClick={(e) => e.preventDefault()}>
+                                <Space>
+                                    <img width={25} src={Global} alt="Global icon" />
+                                    Uz
+                                    <DownOutlined />
+                                </Space>
+                            </a>
+                        </Dropdown>
+
                         <div className=" flex items-center rounded-md duration-300 hover:shadow-md hover:shadow-blue-400 px-2 py-1">
-                            <Link to='login' className="items-center mr-7  flex">
+                            <Link to='login' className="items-center  flex">
                                 <img src={profile} className="mr-1" alt="Global icon" />
                                 <p className="font-medium inline-block">Kirish</p>
                             </Link>
                         </div>
 
-                        {/* Select */}
-                        <Select
-                            size="lg"
-                            label="Select Language"
-                            selected={(element) =>
-                                element &&
-                                React.cloneElement(element, {
-                                    disabled: true,
-                                    className: "flex items-center opacity-100 px-0 gap-2 pointer-events-none border-none ",
-                                })
-                            }
-                        >
-                            {countries.map(({ name, Img }) => (
-                                <Option key={name} value={name} className="flex items-center gap-2 shadow-sm">
-                                    <img
-                                        src={Img}
-                                        alt={name}
-                                        className="h-5 w-5 rounded-full object-cover"
-                                    />
-                                    {name}
-                                </Option>
-                            ))}
-                        </Select>
+
+
 
                     </div>
                 </div>
