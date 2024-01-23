@@ -36,7 +36,6 @@ const Header = ({searchQuery, setSearchQuery}) => {
                     <Link to='/' className="hover:opacity-75">
                         <img width={96} height={48} src={Logo} alt="Site Logo" />
                     </Link>
-                    {/* LogIn & SignUp */}
 
                     {/* Search input */}
                     <div className='relative max-w-[360px]'>
@@ -50,13 +49,13 @@ const Header = ({searchQuery, setSearchQuery}) => {
 
                     <div className=" flex items-center space-x-3">
 
-                        <a href="https://t.me/+O9MlXXfxUA84N2Ji" target="_blank" className="hover:bg-blue-500 rounded-md px-2 py-1 duration-300 hover:text-white">
+                        <a href="https://t.me/+O9MlXXfxUA84N2Ji" target="_blank" className="hover:text-blue-500 duration-500">
                             Aloqa
                         </a>
 
-                        <div className=" flex items-center rounded-md duration-300 hover:shadow-md hover:shadow-blue-400 px-2 py-1">
-                            <Link to='login' className="items-center mr-7  flex">
-                                <img src={profile} className="mr-1" alt="Global icon" />
+                        <div className="px-2 py-1">
+                            <Link to='login' className="hover:text-blue-500 duration-500 items-center mr-7  flex">
+                                <img src={profile} className="text-white mr-1" alt="Global icon" />
                                 <p className="font-medium inline-block">Kirish</p>
                             </Link>
                         </div>

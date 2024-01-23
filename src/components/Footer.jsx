@@ -10,7 +10,7 @@ const Footer = () => {
             <div className='flex items-center justify-between text-white'>
                 <div>
                     <img className='w-[152px] h-[83px] mb-4' src={logo} alt="logo" />
-                    <p className='font-normal text-base'>Copyright 2023 © All rights reserved</p>
+                    <p className='font-normal text-base'>Copyright 2024 © All rights reserved</p>
                 </div>
                 <nav>
                     <ul className='space-y-2'>
