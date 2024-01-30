@@ -52,15 +52,14 @@ const Home = ({ searchQuery, setSearchQuery }) => {
             </section>
 
             <div className="container">
-            <h2 className='text-3xl font-bold mb-6'>
-                Mene Market qulayliklari
+                <h2 className='text-3xl font-bold'>
+                    Mene Market qulayliklari
 
-            </h2>
+                </h2>
             </div>
 
             <Qulayliklar />
 
-            <Footer />
         </>
     )
 }

@@ -70,11 +70,7 @@ const Header = ({ searchQuery, setSearchQuery }) => {
 
                     <div className=" flex items-center  space-x-3">
 
-<<<<<<< HEAD
                         <Link to='contact' className="hover:bg-blue-500 rounded-md px-2 py-1 duration-300 hover:text-white">
-=======
-                        <a href="https://t.me/+O9MlXXfxUA84N2Ji" target="_blank" className="hover:text-blue-500 duration-500">
->>>>>>> 5762a110e4f5d01cba5795e43b680d79380ea8ef
                             Aloqa
                         </Link>
 
@@ -94,23 +90,18 @@ const Header = ({ searchQuery, setSearchQuery }) => {
                             </a>
                         </Dropdown>
 
-<<<<<<< HEAD
-                        <div className=" flex items-center rounded-md duration-300 hover:shadow-md hover:shadow-blue-400 px-2 py-1">
-                            <Link to='/login' className="items-center  flex">
-                                <img src={profile} className="mr-1" alt="Global icon" />
-=======
-                        <div className="px-2 py-1">
-                            <Link to='login' className="hover:text-blue-500 duration-500 items-center mr-7  flex">
+                            
+                        <div className="px-2 py-1 hover:bg-blue-500 rounded-md duration-300 hover:text-white">
+                            <Link to='login' className=" items-center  flex">
                                 <img src={profile} className="text-white mr-1" alt="Global icon" />
->>>>>>> 5762a110e4f5d01cba5795e43b680d79380ea8ef
                                 <p className="font-medium inline-block">Kirish</p>
                             </Link>
                         </div>
 
-                    </div>
                 </div>
 
-            </div>
+                </div>
+                </div>
         </header>
     )
 }
