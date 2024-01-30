@@ -49,7 +49,7 @@ const Header = ({ searchQuery, setSearchQuery }) => {
 
 
     return (
-        <header className="py-6 shadow-md">
+        <header className="py-6 shadow-md sticky top-0 left-0 z-10 bg-white">
             <div className="container  ">
                 <div className="flex justify-between items-center">
 
@@ -71,9 +71,9 @@ const Header = ({ searchQuery, setSearchQuery }) => {
 
                     <div className=" flex items-center  space-x-3">
 
-                        <a href="https://t.me/+O9MlXXfxUA84N2Ji" target="_blank" className="hover:bg-blue-500 rounded-md px-2 py-1 duration-300 hover:text-white">
+                        <Link to='contact' className="hover:bg-blue-500 rounded-md px-2 py-1 duration-300 hover:text-white">
                             Aloqa
-                        </a>
+                        </Link>
 
                         {/* Select language */}
                         <Dropdown
@@ -92,14 +92,11 @@ const Header = ({ searchQuery, setSearchQuery }) => {
                         </Dropdown>
 
                         <div className=" flex items-center rounded-md duration-300 hover:shadow-md hover:shadow-blue-400 px-2 py-1">
-                            <Link to='login' className="items-center  flex">
+                            <Link to='/login' className="items-center  flex">
                                 <img src={profile} className="mr-1" alt="Global icon" />
                                 <p className="font-medium inline-block">Kirish</p>
                             </Link>
                         </div>
-
-
-
 
                     </div>
                 </div>

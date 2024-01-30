@@ -2,7 +2,9 @@ import React from 'react'
 
 const PageNotFound = () => {
   return (
-    <div>PageNotFound</div>
+    <div className='bg-star-bg h-screen w-screen'>
+<h1>fvnkfnkfnbn</h1>
+    </div>
   )
 }
 

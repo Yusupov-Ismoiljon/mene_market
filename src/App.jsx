@@ -3,8 +3,11 @@ import ReactLayouts from "./layouts/ReactLayouts";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import PageNotFound from "./pages/PageNotFound";
 import { useState } from "react";
+import ContactUs from "./pages/ContactUs";
+import PageNotFound from "./pages/PageNotFound"
+
+
 
 
 export default function App() {
@@ -14,8 +17,10 @@ export default function App() {
     createRoutesFromElements(
       <Route path="/" element={<ReactLayouts searchQuery={searchQuery} setSearchQuery={setSearchQuery} />}>
         <Route index element={<Home searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>} />
+        <Route path="/contact" element={<ContactUs />} />
 
         <Route path="/login" element={<Login />} />
+
         <Route path="/signup" element={<Signup />} />
 
         <Route path="*" element={<PageNotFound />} />

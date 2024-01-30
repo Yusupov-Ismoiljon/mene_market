@@ -51,6 +51,13 @@ const Home = ({ searchQuery, setSearchQuery }) => {
                 </div>
             </section>
 
+            <div className="container">
+            <h2 className='text-3xl font-bold mb-6'>
+                Mene Market qulayliklari
+
+            </h2>
+            </div>
+
             <Qulayliklar />
 
             <Footer />
