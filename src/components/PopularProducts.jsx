@@ -12,7 +12,7 @@ const NewProducts = ({ data }) => {
     return (
         <li key={data.id} className='border-1 shadow-lg rounded-3xl '>
             <div className='flex  flex-col justify-center items-center h-full max-h-[242px]'>
-                <img src={data.img} className='h-full rounded-3xl' alt={data.title} />
+                <img src={data.img} className=' h-[242px] rounded-3xl' alt={data.title} />
             </div>
 
             <div className='p-6 space-y-2'>
