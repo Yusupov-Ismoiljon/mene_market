@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import telegram from '../../public/img/telegram.svg'
 
 const Footer = () => {
+<<<<<<< HEAD
   return (
       <footer className='  pt-8'>
           <div className="bg-[#13181F]">
@@ -12,6 +13,17 @@ const Footer = () => {
                     <div>
                         <img className='w-[152px] h-[83px] mb-4' src={logo} alt="logo" />
                         <p className='font-normal text-base'>Copyright 2023 © All rights reserved</p>
+=======
+    return (
+        <div className='bg-[#13181F]'>
+            <div className='w-full max-w-[1240px] px-5 mx-auto py-8'>
+                <div className='flex items-center justify-between text-white'>
+                    <div>
+                        <Link onClick={() => window.scrollTo(0, 0)} to={'/'}>
+                            <img className='w-[152px] h-[83px] mb-4' src={logo} alt="logo" />
+                        </Link>
+                        <p className='font-normal text-base'>Copyright 2024 © All rights reserved</p>
+>>>>>>> 5762a110e4f5d01cba5795e43b680d79380ea8ef
                     </div>
                     <nav>
                         <ul className='space-y-2'>
@@ -38,8 +50,12 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </footer>
   )
+=======
+    )
+>>>>>>> 5762a110e4f5d01cba5795e43b680d79380ea8ef
 }
 
 export default Footer
