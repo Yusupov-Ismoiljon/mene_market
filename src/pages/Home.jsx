@@ -1,3 +1,4 @@
+import React from 'react'
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Kategoriyalar from '../components/Kategoriyalar';
@@ -5,7 +6,6 @@ import NewProducts from '../components/NewProducts';
 import PopularProducts from '../components/PopularProducts';
 import Qulayliklar from '../components/Qulayliklar';
 import { OmmabobMahsulot, YangiMahsulot } from '../store/data';
-import { Rating } from "@material-tailwind/react";
 
 const Home = ({ searchQuery, setSearchQuery }) => {
     return (

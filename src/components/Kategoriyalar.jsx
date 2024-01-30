@@ -1,3 +1,4 @@
+import React from 'react'
 import Elektronika from '../../public/img/Elektronika.png';
 import Salomatlik from '../../public/img/Salomatlik.png';
 import Parfyumeriya from '../../public/img/Parfyumeriya.png';

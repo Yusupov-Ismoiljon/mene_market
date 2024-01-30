@@ -1,3 +1,4 @@
+import React from 'react'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import ReactLayouts from "./layouts/ReactLayouts";
 import Home from "./pages/Home";
