@@ -7,6 +7,7 @@ import Signup from "./pages/Signup";
 import { useState } from "react";
 import ContactUs from "./pages/ContactUs";
 import PageNotFound from "./pages/PageNotFound"
+import CardDataNew from './pages/CardDataNew';
 
 
 
@@ -19,6 +20,7 @@ export default function App() {
       <Route path="/" element={<ReactLayouts searchQuery={searchQuery} setSearchQuery={setSearchQuery} />}>
         <Route index element={<Home searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/newproduct/:id" element={<CardDataNew />} />
 
         <Route path="/login" element={<Login />} />
 

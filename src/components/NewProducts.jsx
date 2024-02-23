@@ -4,6 +4,8 @@ import ShoopingCard from "../../public/img/shopping-cart.svg"
 import LikeIcon from "../../public/img/Like.svg";
 import LikeColorIcon from "../../public/img/like-color.svg"
 import { YangiMahsulot } from '../store/data';
+import { Link } from 'react-router-dom';
+
 
 
 const NewProducts = ({ data, searchQuery, }) => {
@@ -26,10 +28,10 @@ const NewProducts = ({ data, searchQuery, }) => {
                 <p className='text-xl font-semibold'>$ {data.price}</p>
 
                 <div className='flex justify-between items-center'>
-                    <button className='flex items-center font-normal hover:opacity-85 rounded-2xl bg-gradient-to-r from-cyan-300 to-blue-700 text-white duration-300 px-2.5 py-2'>
+                    <Link to={`/newproduct/${data.id}`} className='flex items-center font-normal hover:opacity-85 rounded-2xl bg-gradient-to-r from-cyan-300 to-blue-700 text-white duration-300 px-2.5 py-2'>
                         <img src={ShoopingCard} width={20} height={20} className='mr-2 ' alt="Card img" />
                         Xarid qilish
-                    </button>
+                    </Link>
 
                     <button onClick={() => setLike(!like)}>
                         {like ?
